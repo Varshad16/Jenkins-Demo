@@ -1,0 +1,35 @@
+pipeline
+{
+   agent any
+   
+   stages
+   {
+   
+       stage('Build')
+       {
+           steps
+            {
+                
+           echo 'Building is the first Step of the pipeline'
+           
+            }
+        }
+        
+        stage('Test')
+        {
+            steps
+            {
+                echo 'Testing the build'
+            }
+        }
+        
+        stage('Deploy')
+        {
+            steps
+            {
+                echo ' Everything has passed successfully. Deploying the Build'
+            }
+        }
+   }
+    
+}
